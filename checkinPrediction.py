@@ -112,7 +112,7 @@ height=6
 use_container_width=True
 # st.bar_chart(graph1())
 # st.bar_chart(data=pd.read_csv('training.csv'), x=data['Age'], y=data['BookingsCheckedIn'], width=15, height=6, use_container_width=True)
-st.bar_chart(data,None, x, y, width, height, use_container_width)
+st.bar_chart(training_df,None, x, y, 15, 6, True)
 st.write("graph shows the relationship between age groups and lodging revenue \n incase of surplus, we need to prioritize the middle aged people in 40s \n as they spend more on the booking for amenties")
 
 
