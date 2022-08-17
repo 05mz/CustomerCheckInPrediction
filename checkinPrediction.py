@@ -27,7 +27,7 @@ print("Labels")
 labels[0:5]
 #data preprocessing, here we replace textual data with random numeric data
 features = pd.get_dummies(features)
-print("features")
+st.write("features")
 features[0:5]
 
 features = features.values.astype('float32')
