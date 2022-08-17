@@ -106,7 +106,7 @@ def graph1():
   plt.show()
 # st.bar_chart(graph1())
 # st.bar_chart(data=pd.read_csv('training.csv'), x=data['Age'], y=data['BookingsCheckedIn'], width=15, height=6, use_container_width=True)
-st.bar_chart(data=training_df,None, x=training_df['Age'], y=training_df['BookingsCheckedIn'], width=15, height=6, use_container_width=True)
+st.bar_chart(data(training_df),None, x(training_df['Age']), y(training_df['BookingsCheckedIn']), width(15), height(6), use_container_width=True)
 st.write("graph shows the relationship between age groups and lodging revenue \n incase of surplus, we need to prioritize the middle aged people in 40s \n as they spend more on the booking for amenties")
 
 # def graph2():
