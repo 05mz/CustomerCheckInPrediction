@@ -90,17 +90,22 @@ classifier = keras.Sequential([keras.layers.Dense(32, input_shape=(225,)),
                           keras.layers.Dense(20, activation=tf.nn.relu),
                          keras.layers.Dense(100,activation='softmax')])
 
+#compiling the model
 classifier.compile(optimizer='adam',
              loss='sparse_categorical_crossentropy',
              metrics=['acc'])
 
+#performance testing
+
 prediction_features = classifier.predict(features_test1)
 performance1 = classifier.evaluate(features_test1, labels_test1)
-st.write(performance1)
+st.write("accuracy:",performance1)
+
+#visualisation
 
 chart_data1 = pd.read_csv(
      'training.csv', usecols =["Age", "LodgingRevenue"])
-st.bar_chart(chart_data1,15,6)
+st.bar_chart(chart_data1)
 st.write("graph shows the relationship between age groups and lodging revenue \n incase of surplus, we need to prioritize the middle aged people in 40s \n as they spend more on the booking for amenties")
 
 chart_data2 = pd.read_csv(
