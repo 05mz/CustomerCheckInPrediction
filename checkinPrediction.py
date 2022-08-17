@@ -104,6 +104,7 @@ def graph1():
   plt.bar(x,y)
   plt.xlabel('Age') , plt.ylabel('LodgingRevenue')
   plt.show()
+data=pd.read_csv('training.csv')
 # st.bar_chart(graph1())
 # st.bar_chart(data=pd.read_csv('training.csv'), x=data['Age'], y=data['BookingsCheckedIn'], width=15, height=6, use_container_width=True)
 st.bar_chart(data(training_df),None, x(training_df['Age']), y(training_df['BookingsCheckedIn']), width(15), height(6), use_container_width(True))
