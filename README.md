@@ -15,7 +15,7 @@ Deployment of the project:
 
 Deployed App link: https://05mz-customercheckinprediction-checkinprediction-sqn6xh.streamlitapp.com/
 
-Screencast Video link: 
+Screencast Video link: https://drive.google.com/file/d/1VTXXt1-LD26u4qngpwFMD1eJvjKuRTYI/view?usp=sharing
 
 Bonus Questions:
 
