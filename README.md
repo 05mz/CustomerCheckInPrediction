@@ -30,4 +30,3 @@ Back propagation: it is a way to train artificial neural networks, it is used to
 
 to handle the missing values: if the values that are missing are insignificant to our problem statement, then drop the columns using dropna()
 if the data values that are missing in the important attributes, then the most easy method is to use pandas imputation method. we fill the missing values using numeric values using fillna(mean()). this method calculates the mean of the present values in a column and uses that mean to fill the missing values.
-
