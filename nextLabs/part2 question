@@ -1,0 +1,15 @@
+Part 2 
+Here is the data set that contains the history of customer booking in a hotel.
+
+Link
+
+There are three sections in this part
+1. Train a machine learning model (preferably with a neural network) that 
+predicts the customer who is going to be checked in. Once done, please test 
+the prediction with below test data.
+
+Link 
+
+2. Do a thorough analysis on the results and the dataset with visualizations (please feel free to add creative ways of visualization here).
+
+3. Host/Deploy the results using any hosting service you want (streamlit/flask)
