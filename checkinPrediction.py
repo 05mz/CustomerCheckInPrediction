@@ -103,6 +103,7 @@ plt.show()
 #incase of surplus, we need to prioritize the middle aged people in 40s
 #as they spend more on the booking for amenties
 
+
 x=training_df['Age']
 y=training_df['BookingsCheckedIn']
 plt.figure(1 , figsize = (15 ,6))
