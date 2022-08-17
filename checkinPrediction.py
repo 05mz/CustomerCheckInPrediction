@@ -96,38 +96,30 @@ prediction_features = classifier.predict(features_test1)
 performance1 = classifier.evaluate(features_test1, labels_test1)
 print(performance1)
 
-def graph1():
-  x=training_df['Age']
-  y=training_df['LodgingRevenue']
-  plt.figure(1 , figsize = (15 ,6))
-  plt.bar(x,y)
-  plt.xlabel('Age') , plt.ylabel('LodgingRevenue')
-  plt.show()
-print(graph1())
+#def graph1():
+x=training_df['Age']
+y=training_df['LodgingRevenue']
+plt.figure(1 , figsize = (15 ,6))
+plt.bar(x,y)
+plt.xlabel('Age') , plt.ylabel('LodgingRevenue')
+plt.show()
+#print(graph1())
 print("graph shows the relationship between age groups and lodging revenue \n incase of surplus, we need to prioritize the middle aged people in 40s \n as they spend more on the booking for amenties")
 
-def graph2():
-  x=training_df['Age']
-  y=training_df['BookingsCheckedIn']
-  plt.figure(1 , figsize = (15 ,6))
-  plt.bar(x,y)
-  plt.xlabel('Age') , plt.ylabel('BookingsCheckedIn')
-  plt.show()
+# def graph2():
+x=training_df['Age']
+y=training_df['BookingsCheckedIn']
+plt.figure(1 , figsize = (15 ,6))
+plt.bar(x,y)
+plt.xlabel('Age') , plt.ylabel('BookingsCheckedIn')
+plt.show()
 print(graph2())
 print("graph shows that people in 20s and 30s are prone to not checking in after the booking")
 
 import seaborn
-def graph3():
-  plt.figure(1 , figsize = (15 , 5))
-  seaborn.countplot(y = 'DistributionChannel' , data = pd.read_csv('training.csv'))
-  plt.show()
-print(graph3())
+# def graph3():
+plt.figure(1 , figsize = (15 , 5))
+seaborn.countplot(y = 'DistributionChannel' , data = pd.read_csv('training.csv'))
+plt.show()
+# print(graph3())
 print("above graph shows that a lot of people come through travel agents \n so we should focus on advertising ourselves through travel agents")
-
-def main():
-  graph1()
-  graph2()
-  graph3()
-  
-if __name__=="__main__":
-  main()
