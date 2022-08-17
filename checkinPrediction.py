@@ -78,6 +78,7 @@ featuresTest = featuresTest.values.astype('float32')
 labelsTest = labelsTest.values.astype('float32')
 # st.write(featuresTest[0:2])
 # st.write(labelsTest[0:2])
+st.write("lenght of features")
 st.write(len(featuresTest[0]))
   
 features_train1, features_test1, labels_train1, labels_test1=train_test_split(featuresTest,labelsTest,test_size=0.9)
@@ -99,22 +100,15 @@ st.write(performance1)
 
 chart_data1 = pd.read_csv(
      'training.csv', usecols =["Age", "LodgingRevenue"])
-st.bar_chart(chart_data1)
+st.bar_chart(chart_data1,15,6)
 st.write("graph shows the relationship between age groups and lodging revenue \n incase of surplus, we need to prioritize the middle aged people in 40s \n as they spend more on the booking for amenties")
 
 chart_data2 = pd.read_csv(
-     'training.csv', usecols =["Age", "BookingsCheckedIn"])
+     'training.csv', usecols =["BookingsCheckedIn","Age"])
 st.bar_chart(chart_data2)
 st.write("graph shows that people in 20s and 30s are prone to not checking in after the booking")
 
-# import seaborn
 chart_data3 = pd.read_csv(
      'training.csv', usecols =["DistributionChannel"])
 st.bar_chart(chart_data3)
 st.write("above graph shows that a lot of people come through travel agents \n so we should focus on advertising ourselves through travel agents")
-
-# def graph3():
-#   plt.figure(1 , figsize = (15 , 5))
-#   seaborn.countplot(y = 'DistributionChannel' , data = pd.read_csv('training.csv'))
-#   plt.show()
-# st.image(graph3())
