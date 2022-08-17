@@ -104,7 +104,7 @@ def graph1():
   plt.bar(x,y)
   plt.xlabel('Age') , plt.ylabel('LodgingRevenue')
   plt.show()
-st.dataframe(graph1())
+st.bar_chart(graph1())
 st.write("graph shows the relationship between age groups and lodging revenue \n incase of surplus, we need to prioritize the middle aged people in 40s \n as they spend more on the booking for amenties")
 
 # def graph2():
