@@ -123,3 +123,11 @@ def graph3():
   plt.show()
 print(graph3())
 print("above graph shows that a lot of people come through travel agents \n so we should focus on advertising ourselves through travel agents")
+
+def main():
+  graph1()
+  graph2()
+  graph3()
+  
+if __name__=="__main__":
+  main()
