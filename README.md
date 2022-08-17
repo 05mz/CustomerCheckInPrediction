@@ -2,7 +2,7 @@
 ML model to predict if the customer is going to checkin or not
 
 Deployment of the project:
--Using the code from python file in https://github.com/05mz/CustomerCheckInPrediction/nonDeployed 
+-Using the code from python file in https://github.com/05mz/CustomerCheckInPrediction/tree/main/nonDeployed
 -I added the code to a single file, and made necessary changes to be compatible with streamlit
 -Listed the necessary libraries in requirement file
 -streamlit checks the requirements file and installs all the dependencies
