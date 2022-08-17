@@ -105,15 +105,16 @@ st.write("accuracy:",performance1)
 
 chart_data1 = pd.read_csv(
      'training.csv', usecols =["Age", "LodgingRevenue"])
-st.bar_chart(chart_data1)
+st.bar_chart(chart_data1, use_container_width=True)
 st.write("graph shows the relationship between age groups and lodging revenue \n incase of surplus, we need to prioritize the middle aged people in 40s \n as they spend more on the booking for amenties")
 
 chart_data2 = pd.read_csv(
      'training.csv', usecols =["BookingsCheckedIn","Age"])
-st.bar_chart(chart_data2)
+st.bar_chart(chart_data2,use_container_width=True)
 st.write("graph shows that people in 20s and 30s are prone to not checking in after the booking")
+
 
 chart_data3 = pd.read_csv(
      'training.csv', usecols =["DistributionChannel"])
-st.bar_chart(chart_data3)
+st.bar_chart(chart_data3,use_container_width=True)
 st.write("above graph shows that a lot of people come through travel agents \n so we should focus on advertising ourselves through travel agents")
