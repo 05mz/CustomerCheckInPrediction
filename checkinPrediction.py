@@ -113,7 +113,7 @@ plt.figure(1 , figsize = (15 ,6))
 plt.bar(x,y)
 plt.xlabel('Age') , plt.ylabel('BookingsCheckedIn')
 plt.show()
-print(graph2())
+#print(graph2())
 print("graph shows that people in 20s and 30s are prone to not checking in after the booking")
 
 import seaborn
