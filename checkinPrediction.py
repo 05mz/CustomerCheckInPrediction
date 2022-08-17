@@ -97,42 +97,24 @@ prediction_features = classifier.predict(features_test1)
 performance1 = classifier.evaluate(features_test1, labels_test1)
 st.write(performance1)
 
-def graph1():
-  x=training_df['Age']
-  y=training_df['LodgingRevenue']
-  plt.figure(1 , figsize = (15 ,6))
-  plt.bar(x,y)
-  plt.xlabel('Age') , plt.ylabel('LodgingRevenue')
-  plt.show()
-data=training_df
-x=training_df['Age']
-y=training_df['LodgingRevenue']
-width=15
-height=6
-use_container_width=True
-# st.bar_chart(graph1())
-# st.bar_chart(data=pd.read_csv('training.csv'), x=data['Age'], y=data['BookingsCheckedIn'], width=15, height=6, use_container_width=True)
-#st.bar_chart(data,None,x(training_df['Age']),y(training_df['LodgingRevenue']), width(15), height(6), use_container_width(True))
-st.write("graph shows the relationship between age groups and lodging revenue \n incase of surplus, we need to prioritize the middle aged people in 40s \n as they spend more on the booking for amenties")
-chart_data = pd.read_csv(
+chart_data1 = pd.read_csv(
      'training.csv', usecols =["Age", "LodgingRevenue"])
+st.bar_chart(chart_data1)
+st.write("graph shows the relationship between age groups and lodging revenue \n incase of surplus, we need to prioritize the middle aged people in 40s \n as they spend more on the booking for amenties")
 
-st.bar_chart(chart_data)
-
-# def graph2():
-#   x=training_df['Age']
-#   y=training_df['BookingsCheckedIn']
-#   plt.figure(1 , figsize = (15 ,6))
-#   plt.bar(x,y)
-#   plt.xlabel('Age') , plt.ylabel('BookingsCheckedIn')
-#   plt.show()
-# st.image(graph2())
-# st.write("graph shows that people in 20s and 30s are prone to not checking in after the booking")
+chart_data2 = pd.read_csv(
+     'training.csv', usecols =["Age", "BookingsCheckedIn"])
+st.bar_chart(chart_data2)
+st.write("graph shows that people in 20s and 30s are prone to not checking in after the booking")
 
 # import seaborn
+chart_data3 = pd.read_csv(
+     'training.csv', usecols =["DistributionChannel"])
+st.bar_chart(chart_data3)
+st.write("above graph shows that a lot of people come through travel agents \n so we should focus on advertising ourselves through travel agents")
+
 # def graph3():
 #   plt.figure(1 , figsize = (15 , 5))
 #   seaborn.countplot(y = 'DistributionChannel' , data = pd.read_csv('training.csv'))
 #   plt.show()
 # st.image(graph3())
-# st.write("above graph shows that a lot of people come through travel agents \n so we should focus on advertising ourselves through travel agents")
